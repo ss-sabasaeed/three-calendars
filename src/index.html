@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1e5c35">
+  <title>تین کیلنڈر ایک نظر میں</title>
+  <!-- build:css -->
+</head>
+<body>
+  <main class="wrap">
+    <h1>تین کیلنڈر ایک نظر میں</h1>
+
+    <section class="card">
+      <div class="datebox">
+        <button class="btn" id="prev" aria-label="پچھلا دن">◀ پچھلا</button>
+        <input type="date" id="date" aria-label="تاریخ منتخب کریں">
+        <button class="btn" id="next" aria-label="اگلا دن">اگلا ▶</button>
+      </div>
+      <button class="btn today" id="todayBtn">آج کی تاریخ / Today</button>
+    </section>
+
+    <section class="card preview-card">
+      <div class="preview">
+        <div id="loading" class="loading">
+          <div class="spinner"></div>
+          <div dir="rtl">تصویر تیار ہو رہی ہے…</div>
+          <div class="en">Preparing image…</div>
+        </div>
+        <img id="preview" alt="آج کا کیلنڈر" hidden>
+      </div>
+      <button class="btn main" id="shareBtn">واٹس ایپ پر شیئر کریں / Share</button>
+      <button class="btn alt" id="saveBtn">تصویر محفوظ کریں / Save image</button>
+      <div class="status" id="status"></div>
+      <div class="hint" id="hint">اگر بٹن کام نہ کرے تو تصویر پر انگلی دبا کر رکھیں اور "Download image" یا "Share image" منتخب کریں۔</div>
+    </section>
+
+    <section class="card">
+      <details>
+        <summary>ترتیبات / Settings</summary>
+
+        <label for="hadj">ہجری تاریخ میں فرق (چاند کی رویت) / Hijri adjustment</label>
+        <select id="hadj">
+          <option value="-2">-2 دن</option>
+          <option value="-1">-1 دن (پاکستان – عام طور پر)</option>
+          <option value="0">0 (سعودی ام القریٰ)</option>
+          <option value="1">+1 دن</option>
+          <option value="2">+2 دن</option>
+        </select>
+
+        <label>آج کا قول / Quote of the day</label>
+        <div class="button-row">
+          <button class="btn" id="quotePrev">◀ پچھلا قول</button>
+          <button class="btn" id="quoteAuto">خودکار</button>
+          <button class="btn" id="quoteNext">اگلا قول ▶</button>
+        </div>
+
+        <label for="nameIn">نام (نیچے کی پٹی) / Name</label>
+        <textarea id="nameIn" rows="1"></textarea>
+
+        <label for="messageIn">اوپر والا پیغام / Top message</label>
+        <textarea id="messageIn" rows="2"></textarea>
+
+        <button class="btn reset" id="resetBtn">اصل حالت پر واپس / Reset</button>
+      </details>
+    </section>
+  </main>
+  <!-- build:js -->
+</body>
+</html>

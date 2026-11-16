@@ -1,0 +1,19 @@
+{
+  "name": "three-calendars",
+  "version": "1.0.0",
+  "description": "Daily WhatsApp status image showing the Gregorian, Hijri and Desi (Bikrami) dates with an Urdu quote",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.mjs",
+    "start": "npm run build && npx --yes serve dist"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.24.2"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}
