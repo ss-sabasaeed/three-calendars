@@ -10,7 +10,7 @@ I built it for my father. He used to put this image together by hand every morni
   <img src="docs/app-screen.png" width="300" alt="The app on a phone">
 </p>
 
-**Live app:** _GitHub Pages link goes here once deployed_
+**Live app:** https://ss-sabasaeed.github.io/three-calendars/
 
 ## Features
 
